@@ -1,0 +1,23 @@
+#pics {
+    text-align: center; /*for centering images inside*/
+}
+#pics img {
+    width: 175px; /*set the width or max-width*/
+    height: 250px; /*this makes sure to maintain the aspect ratio*/
+}
+
+p.desc_content {
+background-color: #000;
+color: #FFF;
+font: bold 11px verdana;
+padding-left: 10px;
+padding-top: 7px;
+height: 23px; opacity: 0.7;
+position: relative; 
+top: -30px;
+}
+div.wrapper{
+    float: left;
+    position: relative;
+    margin: 10px;
+ }
