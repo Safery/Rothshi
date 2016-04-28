@@ -1,5 +1,5 @@
 <p align="center">
-<a name="top" href="http://safery.github.io/Project-Rothshi/"><img src="http://i.imgur.com/JiADAhQ.png"></a>
+<a name="top" href="http://safery.github.io/Rothshi/"><img src="http://i.imgur.com/JiADAhQ.png"></a>
 </p>
 
 [![Coverage Status](https://img.shields.io/badge/Website Status-LIVE-brightgreen.svg)](#)
@@ -27,4 +27,4 @@ Rothshi is a web based Manga reader made only with Javascript. The API controls 
 - [Safery Hossain](https://github.com/Safery)
 - [Nasr Mohamed](https://github.com/fukouda)
 
-http://safery.github.io/Project-Rothshi/
+http://safery.github.io/Rothshi/
