@@ -20,7 +20,8 @@
 
 	<!-- Required Scripts for Manga engine -->
 	<script src="js/search.js"></script>
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/locale/af.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -86,26 +87,6 @@
 						</a>
 						<div id="front">
 							<div id="popular">
-								<!-- Modal content AKA BAD LOADING SCREEN-->
-								<div id="myModal" class="modal fade" role="dialog">
-								  <div class="modal-dialog">
-
-									<!-- Modal content-->
-									<div class="modal-content">
-									  <div class="modal-header">
-										<h4 class="modal-title"><center><b>Please Wait!</b></center></h4>
-									  </div>
-									  <div class="modal-body">
-									  <center>
-											<h2>Please wait while Rothshi loads herself :)</h2>
-											<p> Thumbs up for bad loading screen </p>
-											<img src="https://d13yacurqjgara.cloudfront.net/users/12755/screenshots/1037374/hex-loader2.gif" height="100">
-									  </center>
-									  </div>
-									</div>
-
-								  </div>
-								</div>
 								<h1> Most Popular Manga </h1>
 								<div class="wrapper">
 									<a href="pages/manga.html?fname=Naruto&id=4e70ea03c092255ef70046f0">
@@ -168,7 +149,6 @@
 
     <!-- Menu Toggle Script -->
     <script>
-	$('#myModal').modal('show');
 
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
@@ -184,11 +164,6 @@
 	// Create Random Manga
 	$( document ).ready(function() {
 		Random_manga();
-		setTimeout(myFunction, 3000)
-		function myFunction(){
-			$('#myModal').modal('hide');
-			$("#myModal").empty();
-		}
 	});
     </script>
 
