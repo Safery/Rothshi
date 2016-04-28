@@ -7,14 +7,14 @@
 }
 
 p.desc_content {
-background-color: #000;
-color: #FFF;
-font: bold 11px verdana;
-padding-left: 10px;
-padding-top: 7px;
-height: 23px; opacity: 0.7;
-position: relative; 
-top: -30px;
+	background-color: #000;
+	color: #FFF;
+	font: bold 11px verdana;
+	padding-left: 10px;
+	padding-top: 7px;
+	height: 23px; opacity: 0.7;
+	position: relative; 
+	top: -30px;
 }
 div.wrapper{
     float: left;
@@ -22,6 +22,7 @@ div.wrapper{
     margin: 10px;
  }
 #menu-toggle{
+	position: fixed;
 	margin-left: -40px;
 }
 #cover_desc {
@@ -34,4 +35,18 @@ div.wrapper{
 #categories a{
 	margin-bottom: 10px;
 	float: left;
+}
+
+#manga_pics img {
+	width: 100%;
+	height: auto;
+}
+
+#next_pg{
+	float: right;
+	margin-right: 10%;
+}
+
+#prev_pg{
+	margin-left: 10%;
 }
