@@ -30,5 +30,6 @@ Rothshi is a web based Manga reader made only with Javascript. The API controls 
 ## Credits
 - [bootstrap](https://github.com/twbs/bootstrap)
 - [JQuery](https://github.com/jquery/jquery)
+- [MomentJS](https://github.com/moment/moment) *Not currently supported*
 
 http://safery.github.io/Rothshi/
