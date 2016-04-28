@@ -30,15 +30,15 @@ function Gen_desc(json){
 	
 	var cato = document.createElement("div");
 	for(var key in json["categories"]){
-		cato_set = document.createElement("p");
-		cato_set.innerHTML = json["categories"][key];
+		cato_set = document.createElement("a");
+		cato_set.innerHTML = " " + json["categories"][key] + " ";
 		cato.appendChild(cato_set);
 	}
 	cato.id = "categories";
 	div.appendChild(title);
-	div.appendChild(desc);
 	div.appendChild(size);
 	div.appendChild(release);
+	div.appendChild(desc);
 	div.appendChild(cato);
 
 }
