@@ -27,6 +27,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="pics/Rothshi.ico" type="image/x-icon" />
 
 </head>
 
@@ -39,7 +42,7 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="index.html">
-                        Manga Viewer
+                        <img src="pics/logo.png" height="60">
                     </a>
                 </li>
                 <li>
@@ -78,9 +81,31 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-					    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+					    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+							<span class="glyphicon glyphicon-chevron-left" id="top_but" aria-hidden="true"></span>
+						</a>
 						<div id="front">
 							<div id="popular">
+								<!-- Modal content AKA BAD LOADING SCREEN-->
+								<div id="myModal" class="modal fade" role="dialog">
+								  <div class="modal-dialog">
+
+									<!-- Modal content-->
+									<div class="modal-content">
+									  <div class="modal-header">
+										<h4 class="modal-title"><center><b>Please Wait!</b></center></h4>
+									  </div>
+									  <div class="modal-body">
+									  <center>
+											<h2>Please wait while Rothshi loads herself :)</h2>
+											<p> Thumbs up for bad loading screen </p>
+											<img src="https://d13yacurqjgara.cloudfront.net/users/12755/screenshots/1037374/hex-loader2.gif" height="100">
+									  </center>
+									  </div>
+									</div>
+
+								  </div>
+								</div>
 								<h1> Most Popular Manga </h1>
 								<div class="wrapper">
 									<a href="pages/manga.html?fname=Naruto&id=4e70ea03c092255ef70046f0">
@@ -115,6 +140,9 @@
 							</div>
 							<div id="random_manga">
 								<h1> Random Manga </h1>
+								<div id="random_pics">
+								
+								</div>
 							</div>
 						</div>
 						<div id="Manga_Search">
@@ -140,11 +168,30 @@
 
     <!-- Menu Toggle Script -->
     <script>
+	$('#myModal').modal('show');
+
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
+		var button = document.getElementById("top_but");
+		if (button.className == "glyphicon glyphicon-chevron-right"){
+			button.className = "glyphicon glyphicon-chevron-left";
+		}
+		else{
+			button.className = "glyphicon glyphicon-chevron-right";
+		}
     });
+	// Create Random Manga
+	$( document ).ready(function() {
+		Random_manga();
+		setTimeout(myFunction, 3000)
+		function myFunction(){
+			$('#myModal').modal('hide');
+			$("#myModal").empty();
+		}
+	});
     </script>
+
 
 </body>
 
