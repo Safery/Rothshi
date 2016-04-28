@@ -51,3 +51,11 @@ function Delete_Prev_Search(){
 	// Erase everything in the pics element.
 	$("#pics").empty();
 }
+
+function Search_M(){
+	testwindow = window.open("../index.html", "Search()");
+	testwindow.addEventListener('load', function(){
+		Search();
+    });
+
+}
