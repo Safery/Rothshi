@@ -21,3 +21,17 @@ div.wrapper{
     position: relative;
     margin: 10px;
  }
+#menu-toggle{
+	margin-left: -40px;
+}
+#cover_desc {
+	float: right;
+}
+#cover_desc img{
+	float:left;
+}
+
+#categories a{
+	margin-bottom: 10px;
+	float: left;
+}
