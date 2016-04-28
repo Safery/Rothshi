@@ -5,7 +5,7 @@
 
 ## Overview
 
-Project Rothshi is a web based Manga reader made only with Javascript. The API controls and informations are used from MangaEden and with Ajax + JQuery support brings Project Rothshi a fast, responsive web based Manga Viewer where users can read the manga on Computer, portable device and even in non responsive based browsers.
+Rothshi is a web based Manga reader made only with Javascript. The API controls and informations are used from MangaEden and with Ajax + JQuery support brings Project Rothshi a fast, responsive web based Manga Viewer where users can read the manga on Computer, portable device and even in non responsive based browsers.
 
 ## Features
 - Fully created using Javascript.
