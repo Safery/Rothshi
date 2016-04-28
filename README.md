@@ -17,5 +17,8 @@ Project Rothshi is a web based Manga reader made only with Javascript. The API c
 - Responsive design
 - minimum HTML and CSS use with easy to understand comments.
 
+## Creators
+- [Safery Hossain](https://github.com/Safery)
+- [Nasr Mohamed](https://github.com/fukouda)
 
 http://safery.github.io/Project-Rothshi/
