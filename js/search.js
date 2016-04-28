@@ -53,9 +53,5 @@ function Delete_Prev_Search(){
 }
 
 function Search_M(){
-	testwindow = window.open("../index.html", "Search()");
-	testwindow.addEventListener('load', function(){
-		Search();
-    });
-
+	window.location.replace("../index.html");
 }
