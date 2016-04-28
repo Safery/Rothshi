@@ -18,18 +18,21 @@ function Search(){
 					if (myArr["manga"][key]["im"] != null){
 						// Main Div file.
 						var Main_Div = document.createElement("div");
+						var CreateA = document.createElement("a");
+						CreateA.href = "pages/manga.html?fname=Test&id=" + myArr["manga"][key]["i"];
 						Main_Div.className = "wrapper";
 
 						img.src = img_url + myArr["manga"][key]["im"];
 						// Create the thumbnail for each images.
 						img.className = "img-thumbnail";
-						Main_Div.appendChild(img);
+						CreateA.appendChild(img);
 						
 						// Create div for the description.
 						var divDesc = document.createElement("p");
-						divDesc.innerHTML = "Hello";
+						divDesc.innerHTML = myArr["manga"][key]["t"]; // Name of the Manga
 						divDesc.className = "desc_content";
-						Main_Div.appendChild(divDesc);
+						CreateA.appendChild(divDesc)
+						Main_Div.appendChild(CreateA);
 						// Insert the images inside the main div picture element.
 						div.appendChild(Main_Div);
 					}
@@ -42,6 +45,9 @@ function Search(){
 }
 
 function Delete_Prev_Search(){
+	// Hide the front page element.
+	$("#front").empty();
+
 	// Erase everything in the pics element.
 	$("#pics").empty();
 }
