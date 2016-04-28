@@ -1,7 +1,7 @@
 #pics {
     text-align: center; /*for centering images inside*/
 }
-#pics img {
+#pics img, #front img {
     width: 175px; /*set the width or max-width*/
     height: 250px; /*this makes sure to maintain the aspect ratio*/
 }
