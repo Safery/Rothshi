@@ -16,6 +16,10 @@ Rothshi is a web based Manga reader made only with Javascript. The API controls 
 ## Features
 - Fully created using Javascript.
 - Auto updated website.
+- Search Manga based on string
+- Search Manga based on genre
+- Mobile friendly
+- <b>less than 300kb for the whole website!</b>
 - MangaEden API.
 - Ajax supported
 - JQuery support
