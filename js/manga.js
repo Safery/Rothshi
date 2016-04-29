@@ -32,6 +32,7 @@ function Gen_desc(json){
 	for(var key in json["categories"]){
 		cato_set = document.createElement("a");
 		cato_set.innerHTML = " " + json["categories"][key] + " ";
+		cato_set.href = "gen.html?fname=Rothshi&type=cat&Cat=" + json["categories"][key];
 		cato.appendChild(cato_set);
 	}
 	cato.id = "categories";
@@ -197,7 +198,7 @@ function GenerateAns(type){
 				// Main Div file.
 				var Main_Div = document.createElement("div");
 				var CreateA = document.createElement("a");
-				CreateA.href = "pages/manga.html?fname=Rothshi&id=" + myArr["manga"][key]["i"];
+				CreateA.href = "manga.html?fname=Rothshi&id=" + myArr["manga"][key]["i"];
 				Main_Div.className = "wrapper";
 				img.src = img_url + myArr["manga"][key]["im"];
 				// Create the thumbnail for each images.
@@ -233,5 +234,57 @@ function GenerateAns(type){
 	}
 	else if (type == "EC"){
 		$("#secret").show();
+	}
+	else if (type == "cat"){
+		$("#secret").empty();
+		Delete_Prev_Search();
+		var search_url = "https://www.mangaeden.com/api/list/0/";
+		var get_cat = getQueryVariable("Cat");
+			// Ajax request
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (xhttp.readyState == 4 && xhttp.status == 200) {
+					var myArr = JSON.parse(xhttp.responseText);
+					var img_url = "https://cdn.mangaeden.com/mangasimg/";
+					var counter = 0;
+					for(var key in myArr["manga"]){
+						if (counter == 30){
+							break;
+						}
+						counter = counter + 1;
+						var result = myArr["manga"][key]["c"].indexOf(get_cat) > -1;
+						if (result == true){
+							// Print the searched image.
+							var img = new Image();
+							var div = document.getElementById('pics');
+							if (myArr["manga"][key]["im"] != null){
+								// Main Div file.
+								var Main_Div = document.createElement("div");
+								var CreateA = document.createElement("a");
+								CreateA.href = "manga.html?fname=Rothshi&id=" + myArr["manga"][key]["i"];
+								Main_Div.className = "wrapper";
+
+								img.src = img_url + myArr["manga"][key]["im"];
+								// Create the thumbnail for each images.
+								img.className = "img-thumbnail";
+								CreateA.appendChild(img);
+								
+								// Create div for the description.
+								var divDesc = document.createElement("p");
+								divDesc.innerHTML = myArr["manga"][key]["t"].slice(0, 20); // Name of the Manga
+								divDesc.className = "desc_content";
+								CreateA.appendChild(divDesc)
+								Main_Div.appendChild(CreateA);
+								// Insert the images inside the main div picture element.
+								div.appendChild(Main_Div);
+							}
+						}
+					}
+				}
+			};
+			xhttp.open("GET", search_url, true);
+			xhttp.send();
+
+
 	}
 }
