@@ -23,6 +23,32 @@ Rothshi is a web based Manga reader made only with Javascript. The API controls 
 - Responsive design
 - Minimum HTML and CSS use with easy to understand comments.
 
+## Features Visualized
+- Homepage with responsive design.
+<p align="center">
+<a name="top" href="http://safery.github.io/Rothshi/"><img src="http://i.imgur.com/u1f2PLH.jpg"></a>
+</p>
+
+- Extremely fast searching (Thanks Ajax!)
+<p align="center">
+<a name="top" href="http://safery.github.io/Rothshi/"><img src="http://i.imgur.com/7A5l8SN.jpg"></a>
+</p>
+
+- Manga Page
+<p align="center">
+<a name="top" href="http://safery.github.io/Rothshi/"><img src="http://i.imgur.com/L1Sges3.png"></a>
+</p>
+
+- Reading chapters page
+<p align="center">
+<a name="top" href="http://safery.github.io/Rothshi/"><img src="http://i.imgur.com/YUtqD9u.png"></a>
+</p>
+
+- Algorithm can also generate random Manga for the users
+<p align="center">
+<a name="top" href="http://safery.github.io/Rothshi/"><img src="http://i.imgur.com/qSTLFDT.jpg"></a>
+</p>
+
 ## Creators
 - [Safery Hossain](https://github.com/Safery)
 - [Nasr Mohamed](https://github.com/fukouda)
