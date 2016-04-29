@@ -1,4 +1,4 @@
-function Search(){
+function Search(mod){
 	// Run function to erase previous searched results.
 	Delete_Prev_Search();
 	var search_url = "https://www.mangaeden.com/api/list/0/";
@@ -19,7 +19,12 @@ function Search(){
 						// Main Div file.
 						var Main_Div = document.createElement("div");
 						var CreateA = document.createElement("a");
-						CreateA.href = "pages/manga.html?fname=Rothshi&id=" + myArr["manga"][key]["i"];
+						if (mod == "index"){
+							CreateA.href = "pages/manga.html?fname=Rothshi&id=" + myArr["manga"][key]["i"];
+						}
+						else if (mod == "other"){
+							CreateA.href = "manga.html?fname=Rothshi&id=" + myArr["manga"][key]["i"];
+						}
 						Main_Div.className = "wrapper";
 
 						img.src = img_url + myArr["manga"][key]["im"];
