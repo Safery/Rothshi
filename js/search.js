@@ -19,7 +19,7 @@ function Search(){
 						// Main Div file.
 						var Main_Div = document.createElement("div");
 						var CreateA = document.createElement("a");
-						CreateA.href = "pages/manga.html?fname=Test&id=" + myArr["manga"][key]["i"];
+						CreateA.href = "pages/manga.html?fname=Rothshi&id=" + myArr["manga"][key]["i"];
 						Main_Div.className = "wrapper";
 
 						img.src = img_url + myArr["manga"][key]["im"];
@@ -29,7 +29,7 @@ function Search(){
 						
 						// Create div for the description.
 						var divDesc = document.createElement("p");
-						divDesc.innerHTML = myArr["manga"][key]["t"]; // Name of the Manga
+						divDesc.innerHTML = myArr["manga"][key]["t"].slice(0, 20); // Name of the Manga
 						divDesc.className = "desc_content";
 						CreateA.appendChild(divDesc)
 						Main_Div.appendChild(CreateA);
@@ -72,7 +72,7 @@ function Random_manga(){
 				// Main Div file.
 				var Main_Div = document.createElement("div");
 				var CreateA = document.createElement("a");
-				CreateA.href = "pages/manga.html?fname=Test&id=" + myArr["manga"][key]["i"];
+				CreateA.href = "pages/manga.html?fname=Rothshi&id=" + myArr["manga"][key]["i"];
 				Main_Div.className = "wrapper";
 				img.src = img_url + myArr["manga"][key]["im"];
 				// Create the thumbnail for each images.
@@ -80,7 +80,7 @@ function Random_manga(){
 				CreateA.appendChild(img);				
 				// Create div for the description.
 				var divDesc = document.createElement("p");
-				divDesc.innerHTML = myArr["manga"][key]["t"]; // Name of the Manga
+				divDesc.innerHTML = myArr["manga"][key]["t"].slice(0, 20); // Name of the Manga
 				divDesc.className = "desc_content";
 				CreateA.appendChild(divDesc)
 				Main_Div.appendChild(CreateA);
