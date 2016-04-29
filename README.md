@@ -5,7 +5,7 @@
 [![Coverage Status](https://img.shields.io/badge/Website Status-LIVE-brightgreen.svg)](#)
 [![Coverage Status](https://img.shields.io/badge/API Status-Lagging-red.svg)](#)
 [![Coverage Status](https://img.shields.io/badge/Manga-19695%2B-green.svg)](#)
-[![Coverage Status](https://img.shields.io/badge/Version-0.99999%20--%20PRE-Release-yellow.svg)](#)
+[![Coverage Status](https://img.shields.io/badge/Version-0.99999%20--%20PRE--Release-yellow.svg)](#)
 [![Coverage Status](https://img.shields.io/badge/Development-On--Going-brightgreen.svg)](#)
 [![Coverage Status](https://img.shields.io/badge/PHP-False-red.svg)](#)
 
