@@ -50,3 +50,6 @@ div.wrapper{
 #prev_pg{
 	margin-left: 10%;
 }
+#random_manga h1{
+	display: block;
+}
