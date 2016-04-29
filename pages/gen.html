@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Project Rothshi - JS Manga Site</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/simple-sidebar.css" rel="stylesheet">
+    <link href="../css/cover.css" rel="stylesheet">
+
+	<!-- Required Scripts for Manga engine -->
+	<script src="../js/search.js"></script>
+	<script src="../js/manga.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/locale/af.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="../pics/Rothshi.ico" type="image/x-icon" />
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="../index.html">
+                        <img src="../pics/logo.png" height="60">
+                    </a>
+                </li>
+                <li>
+                    <form role="form">
+						<div class="form-group">
+							  <input type="text" class="form-control" id="search_m" value="Search Manga">
+							  <button type="button" class="btn btn-success" onClick="Search_M()">Search</button>
+						</div>
+					</form>
+
+                </li>
+                <li>
+                    <a href="gen.html?fname=Rothshi&type=random">Random Manga</a>
+                </li>
+                <li>
+                    <a href="gen.html?fname=Rothshi&type=fav">Crowd Favourite</a>
+                </li>
+                <li>
+                    <a href="gen.html?fname=Rothshi&type=EC">Editors Choice</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Safery/Rothshi">About Us</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Safery/Rothshi">Terms & Conditions</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Safery/Rothshi">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+					    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+							<span class="glyphicon glyphicon-chevron-left" id="top_but" aria-hidden="true"></span>
+						</a>					
+						<div id="front">
+							<div id="secret">
+								<div class="wrapper">
+									<a href="manga.html?fname=Rothshi&id=4e70e9f1c092255ef70042d4">
+										<img href="pages/manga.html?fname=Naruto&id=4e70e9f1c092255ef70042d4" id="most_pop_manga" class="img-thumbnail" src="http://static.zerochan.net/Zero.no.Tsukaima.full.738798.jpg">
+										<p class="desc_content" > Zero no Tsukaima </p>
+									</a>
+								</div>
+								<div class="wrapper">
+									<a href="manga.html?fname=Rothshi&id=4e70ea06c092255ef70047c1">
+										<img id="most_pop_manga" class="img-thumbnail" src="http://cdn.myanimelist.net/images/anime/3/29438l.jpg">
+										<p class="desc_content"> Maid-sama </p>
+									</a>
+								</div>
+								<div class="wrapper">
+									<a href="manga.html?fname=Rothshi&id=4e70ea04c092255ef7004760">
+										<img id="most_pop_manga" class="img-thumbnail" src="http://www.wallpaperhi.com/thumbnails/detail/20120131/vampire%20knight%20anime%20yuki%20cross%20kuran%20kaname%201745x1170%20wallpaper_www.wallpaperhi.com_20.jpg">
+										<p class="desc_content"> Vampire Knight </p>
+									</a>
+								</div>
+								<div class="wrapper">
+									<a href="manga.html?fname=Rothshi&id=4e70e9f7c092255ef7004384">
+										<img id="most_pop_manga" class="img-thumbnail" src="http://operationrainfall.com/wp-content/uploads/2013/09/Rosario_+_Vampire_II_Manga_v01_cover.jpg">
+										<p class="desc_content"> Rosario Vampire </p>
+									</a>
+								</div>
+								<div class="wrapper">
+									<a href="manga.html?fname=Rothshi&id=5166899845b9ef06ebc15ebc">
+										<img id="most_pop_manga" class="img-thumbnail" src="http://cdn.myanimelist.net/images/manga/1/115803l.jpg">
+										<p class="desc_content"> Shokugeki no Souma </p>
+									</a>
+								</div>
+								<div class="wrapper">
+									<a href="manga.html?fname=Rothshi&id=4e70ea03c092255ef70046f0">
+										<img href="pages/manga.html?fname=Naruto&id=4e70ea03c092255ef70046f0" id="most_pop_manga" class="img-thumbnail" src="http://cdn.mangaeden.com/mangasimg/200x/d1/d1cd664cefc4d19ec99603983d4e0b934e8bce91c3fccda3914ac029.png">
+										<p class="desc_content" > Naruto </p>
+									</a>
+								</div>
+								<div class="wrapper">
+									<a href="manga.html?fname=Rothshi&id=4e70e9efc092255ef7004274">
+										<img id="most_pop_manga" class="img-thumbnail" src="http://cdn.mangaeden.com/mangasimg/200x/99/99af14772b89d87e6f3deb7d6b174537908a3fc5e7cc7eb6fbf92a68.jpg">
+										<p class="desc_content"> Bleach </p>
+									</a>
+								</div>
+								<div class="wrapper">
+									<a href="manga.html?fname=Rothshi&id=4e70ea1dc092255ef7004d5c">
+										<img id="most_pop_manga" class="img-thumbnail" src="http://cdn.mangaeden.com/mangasimg/200x/d5/d5d504279e9f99ac5270b098696a203535f55008064142c4fb321405.png">
+										<p class="desc_content"> Fairy Tail </p>
+									</a>
+								</div>
+								<div class="wrapper">
+									<a href="manga.html?fname=Rothshi&id=4e70ea78c092255ef7006f44">
+										<img id="most_pop_manga" class="img-thumbnail" src="http://cdn.mangaeden.com/mangasimg/200x/24/24efbaaefcbe3cc54a0952fbc7ddf47ace707173506cc8282b427b53.jpg">
+										<p class="desc_content"> Noragami </p>
+									</a>
+								</div>
+								<div class="wrapper">
+									<a href="manga.html?fname=Rothshi&id=4e70ea10c092255ef7004a8c">
+										<img id="most_pop_manga" class="img-thumbnail" src="http://i.ebayimg.com/images/a/(KGrHqZHJE4E88eUTI5LBPretnZ9JQ~~/s-l300.jpg">
+										<p class="desc_content"> Sankarea </p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div id="Manga_Search">
+							<div id="pics">
+							</div>
+						</div>
+						
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+	$("#secret").hide();
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		var button = document.getElementById("top_but");
+		if (button.className == "glyphicon glyphicon-chevron-right"){
+			button.className = "glyphicon glyphicon-chevron-left";
+		}
+		else{
+			button.className = "glyphicon glyphicon-chevron-right";
+		}
+	});
+	$( document ).ready(function() {
+		var type = getQueryVariable("type");
+		GenerateAns(type);
+	});
+	
+	
+    </script>
+
+</body>
+
+</html>
