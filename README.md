@@ -2,11 +2,8 @@
 <a name="top" href="http://safery.github.io/Rothshi/"><img src="http://i.imgur.com/JiADAhQ.png"></a>
 </p>
 
-[![Coverage Status](https://img.shields.io/badge/Website Status-LIVE-brightgreen.svg)](#)
-[![Coverage Status](https://img.shields.io/badge/API Status-LIVE-brightgreen.svg)](#)
 [![Coverage Status](https://img.shields.io/badge/Manga-19695%2B-green.svg)](#)
 [![Coverage Status](https://img.shields.io/badge/Version-1.0%20--%20Released-brightgreen.svg)](#)
-[![Coverage Status](https://img.shields.io/badge/Development-Finished (only for bugs)-brightgreen.svg)](#)
 [![Coverage Status](https://img.shields.io/badge/PHP-False-red.svg)](#)
 
 ## Overview
